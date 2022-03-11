@@ -51,6 +51,9 @@ gem 'bootsnap', require: false
 # Devise is used for authentication [https://github.com/heartcombo/devise]
 gem 'devise'
 
+# TailwindCSS for CSS styles [https://github.com/rails/tailwindcss-rails]
+gem "tailwindcss-rails", "~> 2.0"
+
 group :development, :test do
   gem 'rspec-rails'
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
