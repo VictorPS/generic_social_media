@@ -1,8 +1,3 @@
 class FeedsController < ApplicationController
-
-  def show
-    respond_to do |format|
-      format.html
-    end
-  end
+  before_action :authenticate_user!
 end

@@ -11,9 +11,14 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <main class="container mx-auto mt-28 px-5 flex">
-      <%= yield %>
+  <body class="bg-emerald-100">
+    <main class="container mx-auto my-28 px-5 h-full flex max-w-7xl bg-emerald-200">
+      <div class="pr-5 columns-1">
+        <%= yield :left_content %>
+      </div>
+      <div class="pr-5 columns-2">
+        <%= yield %>
+      </div>
     </main>
   </body>
 </html>
