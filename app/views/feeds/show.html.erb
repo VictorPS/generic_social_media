@@ -4,4 +4,12 @@
   </div>
 <% end %>
 
-<h1>This is the feed!</h1>
+<div class="flex flex-col">
+  <h1>This is the feed!</h1>
+
+  <%= turbo_frame_tag 'feed_posts_creation', src: new_post_path, target: '_top' %>
+
+  <div id="posts">
+    <%= render partial: 'feeds/post', collection: current_user.posts %>
+  </div>
+</div>

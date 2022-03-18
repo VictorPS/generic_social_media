@@ -1,0 +1,6 @@
+<%= turbo_frame_tag 'feed_posts_creation', target: '_top' do %>
+  <%= form_for @post, data: { controller: 'posts', action: 'turbo:submit-end->posts#clearForm' } do |f| %>
+    <%= f.text_field :message %>
+    <%= f.submit %>
+  <% end %>
+<% end %>
